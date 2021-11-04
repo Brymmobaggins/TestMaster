@@ -18,64 +18,72 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation bar and header -->
-    <nav class="nav-bar">
-      <a class="logo">
-        <img src="img/logo-wo-subtitle.png" alt="" />
-      </a>
-      <div class="nav-content">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-      </div>
-      <div class="nav-btn">
-        <button type=""><i class="fas fa-key"></i>Login</button>
-      </div>
-    </nav>
+    <!-- Header and Naviagtion Bar -->
+    <header>
+      <nav id="nav-bar">
+        <a class="logo">
+          <img src="img/logo-wo-subtitle.png" alt="" />
+        </a>
+        <div class="nav-content">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About us</a></li>
+          </ul>
+        </div>
+        <div class="nav-btn">
+          <button type=""><i class="fas fa-key"></i>Login</button>
+        </div>
+      </nav>
+    </header>
     <!-- end -->
-
-    <section>
-      <div class="background-image">
-        <img src="img/Background.png" alt="" />
-      </div>
-
-      <div class="main">
+    
+    <main>
+      <section id="services">
+      <div class="background">
+          <img src="img/Background.png" alt="" />
+        </div>
         <div class="row">
           <div class="column left">
             <h1>What are you looking for?</h1>
-            <div class="box one">
-              <div class="icon-header">
-                <a><i class="fas fa-graduation-cap"></i></a>
-                <h2>Help me create a Marketing Plan!</h2>
-              </div>
-              <p>
-                The Arctic Ocean freezes every winter and much<br />
-                of the sea-ice then thaws every summer, and that
-              </p>
+            <div class="card one">
+            <div class="card-content">
+              <a><i class="fas fa-graduation-cap"></i></a>
+              <h3>Help me create a Marketing Plan!</h3>
             </div>
-            <div class="box two">
-              <div class="icon-header">
-                <a><i class="fas fa-graduation-cap"></i></a>
-                <h2>I know what am looking for</h2>
-              </div>
-              <p>
-                The Arctic Ocean freezes every winter and much<br />
-                of the sea-ice then thaws every summer, and that
-              </p>
-            </div>
+            <p>
+              The Arctic Ocean freezes every winter and much<br />
+              of the sea-ice then thaws every summer, and that
+            </p>
           </div>
-
-          <div class="column right">
-            <div class="animation">
-              <img src="img/Ikbal 3.png
-              " alt="">
+          <div class="card two">
+            <div class="card-content">
+              <a><i class="fas fa-graduation-cap"></i></a>
+              <h3>I know what am looking for</h3>
             </div>
-
+            <p>
+              The Arctic Ocean freezes every winter and much<br />
+              of the sea-ice then thaws every summer, and that
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="column right">
+          <!-- <div class="animation"> -->
+            <img src="img/Ikbal 3.png" alt="">
+            </div>
+          <!-- </div> -->
+          <div class="chat box1">
+            <span>
+              Hi there! Need help in creating a Marketing plan for your business?
+              I can help you to create one using Retink AI engine.
+            </span>
+          </div>
+          <div class="chat box2">
+            <span>
+              Click on the options to get started.
+            </span>
+          </div>
+
+        </div>
   </body>
 </html>
