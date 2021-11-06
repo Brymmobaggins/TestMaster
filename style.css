@@ -53,7 +53,7 @@ ul li {
   margin-right: 10px;
 }
 .nav-btn button {
-  display: nblock;
+  display: block;
   letter-spacing: 2px;
   margin-right: 2.6rem;
   height: 40px;
@@ -195,7 +195,7 @@ p {
   border-right: 12px solid transparent;
   border-top: 12px solid #fff;
   border-bottom: 20px solid transparent;
-  left: 0px;
+  left: 0;
   bottom: -24px;
 }
 .box2:before {
