@@ -2,90 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rethink</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&family=Roboto:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/c446e7960e.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Temprature Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header and Naviagtion Bar -->
     <header>
-      <nav id="nav-bar">
-        <a class="logo">
-          <img src="img/logo-wo-subtitle.png" alt="" />
-        </a>
-        <div class="nav-content">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About us</a></li>
-          </ul>
-        </div>
-        <div class="nav-btn">
-          <button type=""><i class="fas fa-key"></i>Login</button>
-        </div>
-      </nav>
+      <h1>Temperature converter</h1>
     </header>
-    <!-- end -->
-
     <main>
-      <section id="services">
-        <div class="background">
-          <img src="img/Background.png" alt="" />
-        </div>
-        <div class="row">
-          <div class="column left animate__heartBeat">
-            <h1>What are you looking for?</h1>
-            <div class="card one">
-              <div class="card-content">
-                <a><i class="fas fa-graduation-cap"></i></a>
-                <h3>Help me create a Marketing Plan!</h3>
-              </div>
-              <p>
-                The Arctic Ocean freezes every winter and much<br />
-                of the sea-ice then thaws every summer, and that
-              </p>
-            </div>
-            <div class="card two">
-              <div class="card-content">
-                <a><i class="fas fa-graduation-cap"></i></a>
-                <h3>I know what am looking for</h3>
-              </div>
-              <p>
-                The Arctic Ocean freezes every winter and much<br />
-                of the sea-ice then thaws every summer, and that
-              </p>
-            </div>
+      <div class="container">
+        <div class="box">
+          <div>
+            <label for="degree">Degree</label>
+            <input id="degree" />
           </div>
-          <div class="column right">
-            <img class="animate__slideInDown" src="img/Ikbal 3.png" alt="" />
+          <div>
+            <label for="type">Type</label> <br />
+            <select id="measure">
+              <option value="" disabled>choose temperature</option>
+              <option value="celsius">Celcius</option>
+              <option value="fahrenhiet">Fahrenhiet</option>
+            </select>
           </div>
-          <div class="chat box1 animate__slideInRight">
-            <span>
-              Hi there! Need help in creating a Marketing plan for your
-              business? I can help you to create one using <b>Retink AI engine</b>
-              </span>
-          </div>
-          <div class="chat box2 animate__hinge">
-            <span> Click on the options to get started. </span>
+          <div class="btn">
+            <!-- <br /> -->
+            <button id="convert-btn">Convert</button>
           </div>
         </div>
-        <div class="bubble bubble-bottom-left"></div>
-      </section>
+        <div>
+          <label for="result">Result</label>
+          <input id="result" disabled />
+        </div>
+      </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
